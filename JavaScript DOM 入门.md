@@ -36,7 +36,7 @@ eg：
    1. 可能在较新的浏览器里才支持这个方法，之前都是用自己的方法去实现的。搜索匹配DOM元素的方法有很多，但是真正高效的却不多。推荐阅读**Robert Nyman**的文章*The Ultimate getElementByClassName*。
 
 ### 获取和设置属性
-object.getAttribute(attribute)
+object.getAttribute(attribute)  
 object.setAttribute(attribute,value)
 
 注意：通过setAttribute( )做出修改后，通过浏览器view source选项去查看源代码的时候，看到的仍然是改变前的属性值，**这种现象源自DOM的工作模式：先加载文档的静态内容，再动态刷新，动态刷新不影响文档的静态内容。——即，对页面内容进行刷新却不需要在浏览器里面刷新页面。**
